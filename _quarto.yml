@@ -3,23 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "Hudson Wood"
+  title: "GPU Team Data Visualization"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - href: projects/data-visualization.qmd
-        text: Data Visualizations
-      - href: resume.qmd
-        text: Resume
+        text: Team Project
 
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
-    toc-location: right
-    page-layout: article
-
-execute:
-  freeze: auto

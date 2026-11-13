@@ -1,20 +1,83 @@
 ---
-title: "Hudson Wood"
-subtitle: "Industrial Engineering · University of Arkansas"
+title: "Data Visualization for GPUs Since 2009"
+author: "Christopher Espina, Hudson Wood, David Williams, Israel Klebanoff"
+date: "2026-11-13"
+format:
+  html:
+    toc: true
+    theme: cosmo
+    css: styles.css
 ---
 
-::: {.hero}
-**Welcome to my ePortfolio.** I am an Industrial Engineering student at the University of Arkansas. This portfolio features academic work involving data analysis, visualization, and engineering problem solving.
-:::
+# Our team project
 
-## Featured project
+Our team analyzed graphics processing units (GPUs) using Excel. The presentation compares 2D graphics benchmark scores, thermal design power and power performance, manufacturer OpenCL benchmark averages, and average GPU prices over time. We developed four assertion–evidence slides to communicate one finding per visualization.
 
-### GPU Performance and Power Efficiency
+**Team members:** Christopher Espina, Hudson Wood, David Williams, Israel Klebanoff.
 
-For our INEG 21003 Data Visualization Team Project, we explored how graphics-card power requirements relate to performance and efficiency. The project uses charts and assertion–evidence slides to communicate findings clearly.
+**Teammate ePortfolio links:** *Add each teammate’s confirmed published URL below before submitting.*
 
-[View the Data Visualization Project](projects/data-visualization.qmd)
+- Christopher Espina — [add verified link]
+- Hudson Wood — [add your ePortfolio link]
+- David Williams — [add verified link]
+- Israel Klebanoff — [add verified link]
 
-## About my work
+# About our dataset
 
-I am interested in using data and analytical tools to understand technical problems and explain results in a practical way. This portfolio will grow as I complete more projects.
+The GPU dataset covers hardware released across years beginning in 2009 and includes the fields used in our presentation: G2DMark, thermal design power (TDP), power performance, manufacturer, OpenCL benchmark score, launch price, and year. The presentation does not include the original dataset URL, workbook, or cleaning log, so those details still need to be confirmed from the team’s Excel file.
+
+# 1. The G2DMark scores are right-skewed
+
+**Question:** How are GPU G2D (2D graphics) scores distributed?
+
+**Why this question interested us:** We wanted to see whether GPU graphics scores were spread evenly or if most GPUs clustered in a certain range.
+
+**How we used Excel:** In Excel, the G2DMark scores were organized into score intervals, and the number of GPUs in each interval was plotted as a histogram. The original presentation shows higher counts in the lower score ranges and fewer in the highest ranges.
+
+**How we developed the slide:** We placed the frequency histogram under an assertion-style headline that states the visible conclusion: the scores appear right-skewed.
+
+![Original team assertion–evidence slide 1: The G2DMark scores are right-skewed](images/g2d-distribution.png)
+
+
+# 2. Thermal Design Power has a weak relationship with Power Performance
+
+**Question:** Is GPU thermal design power (TDP) strongly related to power performance?
+
+**Why this question interested us:** Power consumption and hardware performance matter when choosing a GPU, so comparing these measures can help us understand whether power requirements alone are useful for comparing GPUs.
+
+**How we used Excel:** We used an Excel scatter plot with TDP (watts) on the horizontal axis and Power Performance on the vertical axis. The chart includes a dotted linear trendline with an R² value of 0.0403.
+
+**How we developed the slide:** The headline gives the main finding, while the scatter plot provides evidence that the linear relationship is weak.
+
+![Original team assertion–evidence slide 2: Thermal Design Power has a weak relationship with Power Performance](images/tdp-power-performance.png)
+
+
+# 3. Nvidia and Apple show the highest average OpenCL scores
+
+**Question:** How do average OpenCL scores compare among GPU manufacturers?
+
+**Why this question interested us:** Manufacturer comparisons can reveal differences in the GPUs represented in our dataset and help us see which groups have higher average computing benchmark scores.
+
+**How we used Excel:** In Excel, OpenCL scores were summarized by manufacturer and displayed as averages using a horizontal bar chart. The chart compares AMD, Apple, ARM, Intel, Nvidia, Other, Qualcomm, and Samsung.
+
+**How we developed the slide:** The assertion headline highlights Nvidia and Apple. The bar chart lets the reader compare their averages with the other manufacturers.
+
+![Original team assertion–evidence slide 3: Nvidia and Apple show the highest average OpenCL scores](images/opencl-manufacturers.png)
+
+
+# 4. Average GPU prices generally increased between 2009 and 2022
+
+**Question:** How did average GPU prices change by year from 2009 through 2022?
+
+**Why this question interested us:** GPU pricing matters when considering hardware purchases. We wanted to see whether prices stayed similar over time or changed noticeably.
+
+**How we used Excel:** We used the year and GPU price fields to chart the average price for each calendar year in Excel. The time-series line graph shows year on the horizontal axis and price in U.S. dollars on the vertical axis.
+
+**How we developed the slide:** The original assertion slide states that prices increased over time and connects the trend to greater demand. The graph shows a broad rise, including a sharp peak around 2018; the chart alone cannot confirm the reason for the increase.
+
+![Original team assertion–evidence slide 4: Average GPU prices generally increased between 2009 and 2022](images/gpu-prices-over-time.png)
+
+
+---
+
+**Original source:** Our team’s four-slide presentation, *Data Visualization for GPUs Since 2009*. Chart images above are unchanged captures of its slides. The exact spreadsheet calculations should be checked against the team workbook.
