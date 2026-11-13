@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Hudson Wood"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects/data-visualization.qmd
+        text: Data Visualizations
+      - href: resume.qmd
+        text: Resume
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-location: right
+    page-layout: article
+
+execute:
+  freeze: auto
