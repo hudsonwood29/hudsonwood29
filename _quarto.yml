@@ -1,15 +1,24 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - assets/*.png
 
 website:
-  title: "GPU Team Data Visualization"
+  title: "Hudson Wood"
   navbar:
     left:
       - href: index.qmd
-        text: Team Project
+        text: Home
+      - href: projects/index.qmd
+        text: Projects
+      - href: resume.qmd
+        text: Resume
 
 format:
   html:
     theme: cosmo
     css: styles.css
+    toc: true
+    toc-location: right
+    page-layout: article
